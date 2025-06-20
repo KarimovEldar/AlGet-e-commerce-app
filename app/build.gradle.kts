@@ -12,6 +12,10 @@ android {
     namespace = "com.example.alget_e_commerce_app"
     compileSdk = 35
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.alget_e_commerce_app"
         minSdk = 24
