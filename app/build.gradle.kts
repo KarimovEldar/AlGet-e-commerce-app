@@ -5,6 +5,7 @@ plugins {
     id("kotlin-parcelize")
     id("dagger.hilt.android.plugin")
     id("androidx.navigation.safeargs.kotlin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -95,11 +96,11 @@ dependencies {
     kapt("androidx.hilt:hilt-compiler:1.2.0")
 
     //Firebase
-//        implementation platform('com.google.firebase:firebase-bom:32.2.3')
-//        implementation 'com.google.firebase:firebase-auth-ktx:22.1.1'
-//        implementation 'com.google.firebase:firebase-firestore-ktx:24.7.1'
-//        implementation 'com.google.firebase:firebase-analytics-ktx:21.3.0'
-//        implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation("com.google.firebase:firebase-analytics:22.4.0")
+    implementation("com.google.firebase:firebase-auth:23.2.1")
+    implementation("com.google.firebase:firebase-firestore:25.1.4")
+    implementation("com.google.firebase:firebase-storage:21.0.2")
 
     //Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
